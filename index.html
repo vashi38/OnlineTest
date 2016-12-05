@@ -1,0 +1,34 @@
+<html>
+	<head>
+		<title>Angular App</title>
+	</head>
+	
+	<script src="angularjs/angular.js"></script>
+	<script src="angularjs/angular-ui-router.js"></script>
+	<script src="bootstrap/jquery.js"></script>
+	<script src="bootstrap/bootstrap.js"></script>
+	<link rel="stylesheet" href="bootstrap/bootstrap.css"/>
+
+	<script src="app.js"></script>
+	<script src="route.config.js"></script>
+	
+	<script src="app.services.js"></script>
+	<script src="login/login.controller.js"></script>
+	<link rel="stylesheet" href="login/login.scss"/>
+	
+	<script src="register/register.controller.js"></script>
+	<link rel="stylesheet" href="register/register.scss"/>
+	
+	<script src="test/test.controller.js"></script>
+	<link rel="stylesheet" href="test/test.scss"/>
+	
+	<script src="result/result.controller.js"></script>
+	<link rel="stylesheet" href="result/result.scss"/>
+	
+	
+	
+	<body ng-app="myApp" background="images/index.jpg">
+		<div ui-view class="mydiv">
+		</div>
+	</body>
+</html>

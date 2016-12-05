@@ -1,0 +1,54 @@
+		.ng-invalid{
+			border-color:red;
+		}	
+		.ng-valid{
+			border-color:green;
+		}	
+		.header_1{
+			color:brown;
+		}
+		.heading_time{
+			font-size:30px; 
+		}
+		.heading_score{
+			font-size:30px;
+			padding-left:36px;
+		}
+		.question{
+			font-size:20px;
+		}
+		.options{
+			font-size:20px;
+			color:black;
+			padding-left:20px;
+		}
+		.submitted{
+			background-color:green;
+			color:white;
+		}
+		.notsubmitted{
+			background-color:brown;
+			color:white;
+		}
+		.current{
+			background-color:orange;
+			color:white;
+		}
+		.myoptions{
+			padding:5px;
+		}
+		.myoptions:hover{
+			background-color:#5cb85c;
+			color:white;
+		}
+		.selected{
+			background-color:#5cb85c;
+			color:white;
+		}
+		.my-well{
+			min-height: 20px;
+			padding: 19px;
+			margin-bottom: 20px;
+		}
+		
+		

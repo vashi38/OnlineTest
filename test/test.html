@@ -1,0 +1,77 @@
+
+		<div class=" col-lg-12 cl-sm-12 " style="color:white"><center><b><h3 >Walchand College of Engineering, Sangli</h3><h4>(An Autonomous Institute)</h4></b></center></div>
+		<div >
+		
+		
+			<div class="container"  >
+				<div class="modal fade" id="que_display" role="dialog">
+					<div class="modal-dialog">
+		
+					<!-- Modal content-->
+						<div class="modal-content">
+							<div class="modal-header">
+								<button type="button" class="close" data-dismiss="modal">&times;</button>
+								<h4 class="modal-title">Questions</h4>
+							</div>
+							<div class="modal-body" style="max-height:50%; overflow:auto">
+				
+								<div class="well col-lg-2 col-sm-3" ng-repeat="i in select"><input type="button" class="btn btn-lg col-lg-12 col-sm-12" ng-class="{'submitted':flag[i], 'notsubmitted':!flag[i], 'current':i==display_no-1} " value="{{i+1}}" ng-model="i" ng-disabled="flag[i]" data-toggle="modal" data-target="#que_display" ng-click="goto(i)"/></div>
+								
+									
+				
+							</div>
+							<div class="modal-footer">
+								<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+							</div>
+						</div>
+		  
+					</div>
+				</div>
+	  
+			</div>
+
+		
+			<div class="col-lg-2 my-well col-sm-12" style="color:white">
+				<label class=" heading_time col-lg-6 col-sm-2">Time:</label><label class="heading_time col-lg-6 col-sm-5">{{Time}}</label>
+				<label class=" heading_time col-lg-6 col-sm-2">Score:</label><label class="heading_time col-lg-6 col-lg-4">{{Score}}</label>
+				
+				<div class="col-lg-12 col-sm-12"></br><input type="button" class="btn btn-lg btn-success col-lg-12 col-sm-12" value="Select Question" name="select"  data-toggle="modal" data-target="#que_display" ng-click="update_queno()"/></div></br></br>
+				
+			</div>
+			
+			
+			<div class="my-well col-lg-9 col-sm-12" >
+				<div class="well col-lg-12 col-sm-12 question" ng-model="question"><label>Que {{display_no}}){{question}}</label></div>
+				<div class="well col-lg-12 col-sm-12" ng-model="sel">
+					<p>Options:</p>
+					<label class="col-lg-12 col-sm-12 myoptions" ng-click="option_selected='a'" ng-class="{selected:option_selected=='a'}">{{options[0]}}</label>
+					<label class="col-lg-12 col-sm-12 myoptions" ng-click="option_selected='b'" ng-class="{selected:option_selected=='b'}">{{options[1]}}</label>
+					<label class="col-lg-12 col-sm-12 myoptions" ng-click="option_selected='c'" ng-class="{selected:option_selected=='c'}">{{options[2]}}</label>
+					<label class="col-lg-12 col-sm-12 myoptions" ng-click="option_selected='d'" ng-class="{selected:option_selected=='d'}">{{options[3]}}</label>
+						
+					
+					</br></br>
+					Selected option: {{option_selected}}
+				
+				</div>
+					
+			</div>
+			
+			<div class="col-lg-3  col-sm-12 "></div>
+			<div class="col-lg-6 my-well col-sm-12 " >
+			
+				<div class="col-lg-4 col-sm-4"><input type="button" class="btn btn-lg col-sm-12 col-lg-12" value="Back" name="back" ng-click="pre()" /></div>
+				<div class="col-lg-4 col-sm-4"><input type="button" class="btn btn-lg col-sm-12 col-lg-12" value="Submit" name="submit" ng-click="submit()"/></div>
+				<div class="col-lg-4 col-sm-4"><input type="button" class="btn btn-lg col-sm-12 col-lg-12" value="Next" name="next" ng-click="next()"/></div>
+				
+				<div class="col-lg-12 col-sm-12"></br><input type="button" class="btn btn-lg btn-success col-lg-12 col-sm-12" value="Finish" name="finish" ng-click = "finish_test()" /></div></br></br>
+				
+				<div class="col-lg-4 col-sm-4"></br><input type="button" class="btn btn-lg col-sm-12 col-lg-12" value="X2" name="X2" ng-click="double_marks()" ng-disabled = "lf1"/></div>
+				<div class="col-lg-4 col-sm-4"></br><input type="button" class="btn btn-lg col-sm-12 col-lg-12" value="?" name="?" ng-click="get_ans()" ng-disabled = "lf2"/></div>
+				<div class="col-lg-4 col-sm-4"></br><input type="button" class="btn btn-lg col-sm-12 col-lg-12" value="50-50" name="5050" ng-click="choose2()" ng-disabled = "lf3"/></div>
+				
+				
+			
+			</div>
+			
+		</div>

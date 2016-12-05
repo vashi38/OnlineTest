@@ -1,0 +1,24 @@
+<div >
+			</br></br></br></br></br></br></br></br></br>
+			<div class="col-lg-4 "></div>
+			<div class="col-lg-4 col-sm-12 "  class="well">
+				<form  class="well" name="login_form" novalidate>
+					<center><h3 class="college_name">Walchand College of Engg. Sangli</h3>
+					<h4 class="heading_1">(An Autonomous Institute)</h4>
+					</br><h4 class="heading_2">Candidate Login</h4>
+					<div class="error_info well" ng-show="iup">Invalid Username/Password</div>
+					</br><input type="text" name="username" class="input-lg" ng-model="user.uname" placeholder="Username" required />
+					</br><span ng-show="login_form.$dirty && login_form.username.$error.required">this is required field</span>
+					
+					</br></br><input type="password" name="password" class="input-lg" ng-model="user.pwd" placeholder="Password"  required/>
+					</br><span ng-show="login_form.$dirty && login_form.password.$error.required">this is required field</span>
+					
+					</br></br><input class="btn btn-success btn-lg" ng-disabled="login_form.$invalid" type="submit" ng-click="submit()" value="submit"/></center></br>
+					
+				</form>
+			</div>
+			<div class="col-lg-4">
+				
+			</div>
+	
+		</div>
